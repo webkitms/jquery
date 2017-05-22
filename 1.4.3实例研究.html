@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>实例研究</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script>
+		// $(document).ready(function () {
+		// 	var $cr = $("#cr");		//jQuery对象
+		// 	var cr = $cr[0];		//DOM对象
+		// 	$cr.click(function () {
+		// 		if (cr.checked) {	//DOM方式判断
+		// 			alert('感谢你的支持！可以继续操作！');
+		// 		}
+		// 	})
+		// })
+
+		$(function () {
+			var $cr = $("#cr");
+			$cr.click(function () {
+				if($cr.is(":checked")) {
+					alert('感谢你的支持！可以继续操作!');
+				}
+			})
+		})
+	</script>
+</head>
+<body>
+	<input type="checkbox" id="cr"><label for="cr">我已经阅读了上面制度.</label>
+</body>
+</html>

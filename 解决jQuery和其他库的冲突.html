@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>库之间冲突的解决方案</title>
+</head>
+<body>
+	1.jQuery库在其他库导入之后
+		<!-- jQuery.noConflick();
+		jQuery(function () {
+
+		}) -->
+
+		<!-- var $j = jQuery.noConflick();
+		$j(function () {
+
+		}) -->
+
+		<!-- jQuery.noConflick();
+		jQuery(function ($) {
+
+		})	 -->
+
+		<!-- jQuery.noConflick();
+		(function () {
+
+		})(jQuery); -->
+	<!-- 2.jQuery库在其他库之前导入,可以直接使用jQuery来工作
+		jQuery(function () {
+		
+		}) -->
+</body>
+</html>
